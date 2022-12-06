@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Million Lines</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <script>
+      $(document).ready(function(){
+          /* Get iframe src attribute value i.e. YouTube video url
+          and store it in a variable */
+          var url = $("#cartoonVideo").attr('src');
+          
+          /* Assign empty url value to the iframe src attribute when
+          modal hide, which stop the video playing */
+          $("#myModal").on('hide.bs.modal', function(){
+              $("#cartoonVideo").attr('src', '');
+          });
+          
+          /* Assign the initially stored url back to the iframe src
+          attribute when modal is displayed again */
+          $("#myModal").on('show.bs.modal', function(){
+              $("#cartoonVideo").attr('src', url);
+          });
+      });
+      </script>
+  </head>
+
+  <body>
+    <nav class="navbar bg-light navbar bg-dark">
+      <div class="container">
+        <img src="images/top-logo.png">
+      <div class="d-flex justify-content-end">
+        <a class="nav-link text-white-50 bg-dark" href="#">WHO WE ARE</a>
+        <a class="nav-link text-white-50 bg-dark" href="#">GET INVOLVED</a>
+      </div>
+      </div>
+    </nav>
+
+    <div id="home">
+      <!-- Votre code ici -->
+      <div class="container text-center p-5">
+        <h1 class="h1">Our goal is to inspire<br> Tallahassee to write 1,000,000 lines of code_</h1>
+        <p class="phd">All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong>.<br>Millions of lines of code are being written. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
+        <div class="bs-example m-4">
+          <!-- Button HTML (to Trigger Modal) -->
+          <a href="#myModal" class="btn btn-lg btn-danger" data-toggle="modal">Learn more »</a>
+          
+          <!-- Modal HTML -->
+          <div id="myModal" class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">YouTube Video</h5>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>     
+        <img src="images/code.png" class="img-fluid">
+      </div>
+    </div>
+
+    <div id="who">
+      <div class="text-center py-5">
+        <img src="images/academy-brand-med.png">
+        <h2 class="text-danger fs-1">WHO WE ARE</h2>
+        <hr class="d-flex m-auto border-danger" style="width: 150px;">
+        <p class="pwho">We are <span>MASSIVE Academy</span>. We aim to improve education through both method - effective project based<br> learning - and material - by teaching skills that are applicable to improving your life today.</p>
+      </div>
+    </div>
+    <!-- /#who -->
+    <div id="get-involved" class="container-fluid bg-light pb-5">
+      <h2 class="text-danger text-center pt-5">GET INVOLVED</h2>
+      <hr class="border-danger pb-3" style="width: 150px;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12 md-12 col-lg">
+           <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="30%" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg>
+            <h2 class="text-danger mt-3">STUDENTS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed arcu quis odio consequat scelerisque. Etiam in maximus ipsum. Morbi dictum neque et risus.</p>
+            <button type="button" class="btn btn-outline-secondary text-danger">Start Learning »</button>
+          </div>
+          <div class="col-sm-12 md-12 col-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="30%" viewBox="0 0 512 512"><path d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"/></svg>
+            <h2 class="text-danger mt-3">EDUCATORS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed arcu quis odio consequat scelerisque. Etiam in maximus ipsum. Morbi dictum neque et risus.</p>
+            <button type="button" class="btn btn-outline-secondary text-danger">Join The Initiative »</button>
+          </div>
+          <div class="col-sm-12 md-12 col-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="30%" viewBox="0 0 640 512"><path d="M608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 176c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 48h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"/></svg>            
+            <h2 class="text-danger mt-3">SPONSORS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed arcu quis odio consequat scelerisque. Etiam in maximus ipsum. Morbi dictum neque et risus.</p>
+            <button type="button" class="btn btn-outline-secondary text-danger">Give Support »</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#get-involved -->
+
+    <footer class="bg-danger" style="height: 275px;">
+      <img id="ftimg" src="images/one-million-bottom-brand.png">
+    </footer>
+
+    <div id="back-to-top">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div><!-- /#back-to-top -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+  </body>
+</html>
